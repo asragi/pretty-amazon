@@ -1,0 +1,17 @@
+{
+    "name": "Pretty-Amazon",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Generate simple amazon link and copy to pasteboard",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amazon.co.jp/*",
+                "https://www.amazon.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ]
+}
